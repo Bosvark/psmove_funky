@@ -47,12 +47,7 @@ COMPFLAGS += -DDEBUG
 
 LDFLAGS     +=  -nostartfiles -nostdlib $(LDS) -Xlinker --gc-sections -L"$(LDDIR)"
 
-ifeq ($(FLOAT_TYPE), hard)
-BASEFLAGS += -fsingle-precision-constant -Wdouble-promotion
-BASEFLAGS += -mfpu=fpv4-sp-d16 -mfloat-abi=hard
-else
 BASEFLAGS += -mfloat-abi=soft
-endif
 
 WARNFLAGS   := -Wall -O0 -Wall -g3
 
