@@ -1,0 +1,3 @@
+This is my first test project for the Playstation Move controller. This is heavily inspired by the work done by Ken Sebesta (http://www.eissq.com/ps3_move/), reverse engineering the circuit layout of the PS Move controller.
+
+This project was basically done as a sanity check for the development environment and my understanding of the setup required to work with the PS Move. It is a very simple project that uses PWM to control the brightness of the RGB led, resulting in a psychedelic display of colors.
